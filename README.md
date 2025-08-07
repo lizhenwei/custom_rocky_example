@@ -1,4 +1,11 @@
 # 自定义 Rocky Linux ISO 与 Docker 安装指南
+### 0. 准备需要用的库和文件
+```bash
+sudo dnf groupinstall "Development Tools"
+sudo dnf install lorax-lmc-novirt pykickstart git createrepo_c wget vim
+wget https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.6-x86_64-dvd.iso
+```
+
 
 ### 1. 准备 Docker RPM 包
 
